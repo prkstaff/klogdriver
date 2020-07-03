@@ -17,7 +17,7 @@ Into this:
 sudo mv klogdriver /usr/local/bin
 ```
 
-### 2 - Create and alias
+### 2 - Create and alias in your .bashrc or .zshrc
 ```
 function klog () { kubectl logs -f --timestamps $@ | klogdriver ; }
 ```
