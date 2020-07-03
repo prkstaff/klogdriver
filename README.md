@@ -14,10 +14,17 @@ Into this:
 ## Installing
 ### 1 - Download the latest release
 ```
+chmod +x klogdriver
 sudo mv klogdriver /usr/local/bin
+
 ```
 
 ### 2 - Create and alias in your .bashrc or .zshrc
 ```
 function klog () { kubectl logs -f --timestamps $@ | klogdriver ; }
 ```
+
+save and reload or open a new session of your shell
+
+### 3 - Use it
+klog your-pod-name-xpto
