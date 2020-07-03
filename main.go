@@ -54,6 +54,4 @@ func main() {
 			fmt.Println(text)
 		}
 	}
-	color.Cyan("Cyan")
-	color.Blue("Blue")
 }
